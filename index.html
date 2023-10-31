@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+
+        <h1>Text Input</h1>
+        <div class="state">
+            <p class="state__desc">Default</p>
+        </div>
+        <label class="field is-disabled">
+            <span class="field__text">label </span>
+            <input class="field__input" type="Text" placeholder="Text">
+        </label>
+    
+    
+        <div class="state">
+            <p class="state__desc">Required</p>
+        </div>
+        <label clss="field">
+            <span class="field__text">label <span class="field__req">*</span></span>
+            <input class="field__input" required type="Text" placeholder="Text">
+        </label>
+    
+    
+        <div class="state">
+            <p class="state__desc">Error</p>
+        </div>
+        <label clss="field">
+            <span class="field__text">label </span>
+            <input class="field__input" type="text" name="/" value="Text" >
+            <span class="field__input__coment1">Error message</span>
+        </label>
+    
+        <div class="state">
+            <p class="state__desc">Success</p>
+        </div>
+        <label clss="field">
+            <span class="field__text">label </span>
+            <input class="field__input" type="text" name="/" value="A complex form might have multiple input fields" >
+            <span class="field__input__coment2">Success message</span>
+        </label>
+    
+        <div class="state">
+            <p class="state__desc">Active</p>
+        </div>
+        <label clss="fieldactiv">
+            <span class="fieldactiv__text">label </span>
+            <input class="fieldactiv__input" type="text" name="/" value="A complex form might...|" >
+        </label>
+    
+        <div class="state">
+            <p class="state__desc">Filled</p>
+        </div>
+        <label clss="field">
+            <span class="field__text">label </span>
+            <input class="field__input" type="text" name="/" value="A complex form might have multiple input fields, stacked vertically. Space the input fields evenly, clearly associating " >
+        </label>
+    
+        <div class="state">
+            <p class="state__desc">Read</p>
+        </div>
+        <label clss="field">
+            <span class="field__text">label </span>
+            <input class="field__input" type="text" name="/" value="A complex form might have multiple input fields, stacked vertically. Space the input fields evenly, clearly associating " >
+        </label>
+    
+        <div class="state">
+            <p class="state__desc">Password</p>
+        </div>
+        <label clss="field">
+            <span class="field__text">label </span>
+            <input class="field__input" type="text" name="/" value="/" >
+        </label>
+    
+        <div class="state">
+            <p class="state__desc">Date</p>
+        </div>
+        <label clss="field">
+            <span class="field__text">label </span>
+            <input class="field__input" type="text" name="/" value="/" >
+        </label>
+    
+    
+        
+        <div>
+            <p class="mainstate">Text Area</p>
+        </div>
+        <div class="state">
+            <p class="state__desc">Default</p>
+        </div>
+        <label class="field2">
+            <span class="field2__text">label</span>
+            <textarea class="field2__textarea" placeholder="Hint text"></textarea>
+        </label>
+    
+    
+      
+        <div>
+            <p class="mainstate"Select></p>
+        </div>
+        <div class="state">
+            <p class="state__desc">Default</p>
+        </div>
+        <label class="field2">
+            <span class="field2__text">label</span>
+            <select class="field2__select">
+                <option value="Male">Male</option>
+                <option value="Female">Female</option>
+    
+            </select>
+            <label class="field2">
+                <span class="field2__text">label</span>
+                <select class="field2__select">
+                    <option value="Male">Male</option>
+                    <option value="Female">Female</option>
+        
+                </select>
+        </label>
+    <div class="row">
+        <label>
+        <div class="chk">
+            <input class="chk__input" type="checkbox">
+            <span class="chk__check"></span>
+            <span class="chk__text">Item</span>
+        </div>
+        </label>
+        <label>
+            <div class="chk">
+                <input class="chk__input" type="checkbox">
+                <span class="chk__check"></span>
+                <span class="chk__text">Item</span>
+            </div>
+        </label>
+        <label>
+            <div class="radio">
+                <input class="radio__input" name="user" type="radio">
+                <span class="radio__check"></span>
+                <span class="radio__text">Item</span>
+            </div>
+        </label>
+        <label>
+            <div class="radio">
+                <input class="radio__input" name="user" type="radio">
+                <span class="radio__check"></span>
+                <span class="radio__text">Item</span>
+            </div>
+        </label>
+    </div>
+<div class="mainswitch">
+
+    <label>
+        <div class="switch">
+            <input class="switch__input" type="checkbox">
+            <span class="switch__check"></span>
+            <span class="switch__text">Enabled Unselected / Off</span>
+        </div>
+    </label>
+    <label>
+        <div class="switch">
+            <input class="switch__input" type="checkbox">
+            <span class="switch__check"></span>
+            <span class="switch__text">Enabled Selected / On</span>
+        </div>
+    </label>
+    <label>
+        <div class="switch is-disabled">
+            <input class="switch__input" type="checkbox">
+            <span class="switch__check"></span>
+            <span class="switch__text">Disabled Selected / On</span>
+        </div>
+    </label>
+    <label>
+        <div class="switch is-disabled">
+            <input disabled class="switch__input" type="checkbox">
+            <span class="switch__check"></span>
+            <span class="switch__text">Disabled Unselected / Off</span>
+        </div>
+    </label>
+</div>
+
+    <button class="btn.is-disabled">Send</button>
+
+    </form>
+    
+        
+        
+
+</body>
+</html>
